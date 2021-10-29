@@ -60,11 +60,11 @@ async function initAndRunSQLiteThroughIDBQueries() {
   // create the table
   const dex = new Dexie("my_test_db_");
 
-  performance.mark("idb_via_sql_test_start");
   dex.version(1).stores({
     friends: "name,age",
   });
 
+  performance.mark("idb_via_sql_test_start");
   // populate the db with the data
   await dex.friends.bulkAdd(fakeDBData);
   // read the data
@@ -98,11 +98,11 @@ async function initAndRunIDBQueries() {
 
   const dex = new Dexie("my_test_db_");
 
-  performance.mark("indexedDB_test_start");
   dex.version(1).stores({
     friends: "name,age",
   });
 
+  performance.mark("indexedDB_test_start");
   // populate the db with the data
   await dex.friends.bulkAdd(fakeDBData);
 
