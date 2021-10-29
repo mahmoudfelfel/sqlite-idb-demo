@@ -1,0 +1,27 @@
+{
+  "name": "absurd-example-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "webpack serve"
+  },
+  "dependencies": {
+    "@jlongster/sql.js": "^1.6.7",
+    "absurd-sql": "^0.0.46",
+    "dexie": "^3.0.3",
+    "idb": "^6.1.5",
+    "immediate": "^3.3.0",
+    "indexeddbshim": "^8.0.0",
+    "noop-fn": "^1.0.0",
+    "tiny-queue": "^0.2.1"
+  },
+  "devDependencies": {
+    "core-js": "^3.18.3",
+    "html-webpack-plugin": "^5.3.2",
+    "regenerator-runtime": "^0.13.9",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
