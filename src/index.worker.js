@@ -84,7 +84,7 @@ async function initAndRunSQLiteThroughIDBQueries() {
   const duration = performance.getEntriesByName("idb_via_sql_test")[0].duration;
   console.log(
     `%c Dexie API going through SQLite Queries for reading and writing: ${duration}ms`,
-    "color: white; font-family:monospace; font-size: 20px"
+    "color: cadetblue; font-family:monospace; font-size: 20px"
   );
 }
 
@@ -120,7 +120,7 @@ async function initAndRunIDBQueries() {
   const duration = performance.getEntriesByName("indexedDB_test")[0].duration;
   console.log(
     `%cPure IDB Dexie Queries for reading and writing: ${duration}ms`,
-    "color: white; font-family:monospace; font-size: 20px"
+    "color: cadetblue; font-family:monospace; font-size: 20px"
   );
 }
 
@@ -158,7 +158,7 @@ async function initAndRunSQLiteQueries() {
   const duration = performance.getEntriesByName("sql_test")[0].duration;
   console.log(
     `%cPure SQLite Queries for reading and writing: ${duration}ms`,
-    "color: white; font-family:monospace; font-size: 20px"
+    "color: cadetblue; font-family:monospace; font-size: 20px"
   );
 }
 
